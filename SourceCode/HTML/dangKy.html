@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMN - ĐĂNG KÝ</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/dangNhap.css">
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/dangKy.js"></script>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-in-container">
+            
+            <form action="" >
+                <h1>Đăng ký</h1>
+                <input type="text" placeholder="Họ tên" id="txtHoten"/> <span style="color: red;" id="errorNameDK"></span>
+                <input type="text" placeholder="Tên tài khoản" id="txtTKDK"/> <span style="color: red;" id="errorTKDK"></span>
+                <input type="password" placeholder="Mật khẩu" id="txtMKDK"/>   <span style="color: red;" id="errorPassDK"></span>
+                <input type="password" placeholder="Nhập lại mật khẩu" id="txtRepassDK"/>   <span style="color: red;" id="errorRePassDK"></span>
+                <input type="tel" placeholder="Số điện thoại" id="phone"/> <span style="color: red;" id="errorSDTDK"></span>
+                <input type="button" value="tạo tài khoản" class="button" onclick="taoTaiKhoan()" data-toggle="modal" data-target="#myModal">
+                <!-- <input type="button" value="tạo tài khoản" class="button" onclick="xoa()" data-toggle="modal" data-target="#myModal"> -->
+                
+            </form>
+            
+        </div>
+        
+        <div class="overlay-container">
+            <div class="overlay">
+              <div class="overlay-panel overlay-right"> 
+                    <h1 style="color: black; font-family: 'Times New Roman', Times, serif; font-size: 70px;">LMN</h1> 
+                    <h5>Nhiều ưu đãi hot đang chờ bạn</h5>
+                    <h5>Đăng ký ngay hôm nay</h5>
+                    <a href="../HTML/dangNhap.html">Quay lại trang đăng nhập</a>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="createModal"></div>
+    
+</body>
+
+</html>
